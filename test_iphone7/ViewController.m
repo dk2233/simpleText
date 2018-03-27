@@ -20,33 +20,30 @@ dispatch_time_t time1;
 
 - (void)viewDidLoad {
     
-    
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     [self.label1 setTextColor:[UIColor blueColor] ];
-    //[UIFont ]
+    
     [self.label1 setFont:[UIFont fontWithName:@"Cochin" size:9]];
     [self.text_queue setFont:[UIFont systemFontOfSize:8]];
     [self.text setText:@"afg"];
     MyClass_thread *myclass = [[MyClass_thread alloc ] init];
-    time1= dispatch_time(DISPATCH_TIME_NOW, 2*NSEC_PER_SEC);
+    
     self.MyQueue = dispatch_get_main_queue();
     self.var = 8;
     
     NSString *temp_s = [NSString stringWithFormat:@"%@",self.MyQueue];
-    
     [_text_queue setText:temp_s];
     
-    //dispatch_queue_create("TestQueue", DISPATCH_QUEUE_SERIAL);
-//
     MyClass_thread_ios *class_comp = [[MyClass_thread_ios alloc] init_thread:self with:myclass textElement:self.text];
     
+    //[myclass WriteSthg];
     
-    
-    dispatch_after(time1, _MyQueue, ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        NSLog(@" after 2 ");
         [self.text setText:@" after 2 sec "];
+        
     });
                    
     

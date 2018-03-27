@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *text_queue;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 
+@property (weak, nonatomic) IBOutlet UITextField *text_timer;
 
 @property (weak, nonatomic) IBOutlet UITextField *text;
 @property dispatch_queue_t  MyQueue;
@@ -29,5 +30,7 @@
 
 
 -(id)init_thread: (ViewController *)view with: (MyClass_thread *)my_thread textElement:(UITextField *)text1;
+
+-(void)UpdateTimer:(ViewController *)view with:(MyClass_thread *)my_thread;
 
 @end
