@@ -13,6 +13,7 @@
 		657DC29D2046083C00533EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DC29B2046083C00533EA3 /* Main.storyboard */; };
 		657DC29F2046083C00533EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657DC29E2046083C00533EA3 /* Assets.xcassets */; };
 		657DC2A22046083C00533EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DC2A02046083C00533EA3 /* LaunchScreen.storyboard */; };
+		E719A0F5206AE7FA00CE076E /* 20180204_112903.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E719A0F4206AE7FA00CE076E /* 20180204_112903.jpg */; };
 		E773113F20679AE00038392D /* thread.m in Sources */ = {isa = PBXBuildFile; fileRef = E773113D20679ADF0038392D /* thread.m */; };
 		E7CEDFCE2068EFBE0011BBCF /* ClassComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CEDFCD2068EFBE0011BBCF /* ClassComposition.m */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		657DC29E2046083C00533EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657DC2A12046083C00533EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657DC2A32046083C00533EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E719A0F4206AE7FA00CE076E /* 20180204_112903.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 20180204_112903.jpg; path = ../../../../Pictures/kinia/20180204_112903.jpg; sourceTree = "<group>"; };
 		E773113D20679ADF0038392D /* thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = thread.m; path = ../../Os_thread1/Os_thread1/thread.m; sourceTree = "<group>"; };
 		E773113E20679AE00038392D /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thread.h; path = ../../Os_thread1/Os_thread1/thread.h; sourceTree = "<group>"; };
 		E7CEDFCD2068EFBE0011BBCF /* ClassComposition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassComposition.m; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		657DC2862046083C00533EA3 = {
 			isa = PBXGroup;
 			children = (
+				E719A0F3206AE78B00CE076E /* img */,
 				657DC2912046083C00533EA3 /* test_iphone7 */,
 				657DC2902046083C00533EA3 /* Products */,
 			);
@@ -85,6 +88,14 @@
 				657DC2932046083C00533EA3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E719A0F3206AE78B00CE076E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				E719A0F4206AE7FA00CE076E /* 20180204_112903.jpg */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				657DC2A22046083C00533EA3 /* LaunchScreen.storyboard in Resources */,
 				657DC29F2046083C00533EA3 /* Assets.xcassets in Resources */,
+				E719A0F5206AE7FA00CE076E /* 20180204_112903.jpg in Resources */,
 				657DC29D2046083C00533EA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

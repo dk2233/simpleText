@@ -45,7 +45,8 @@ dispatch_time_t time1;
         [self.text setText:@" after 2 sec "];
         
     });
-                   
+    
+    [self.Slider1 maximumValue];
     
 }
 
@@ -53,5 +54,14 @@ dispatch_time_t time1;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)sliderValueChange:(id)sender {
+    NSString *str1 = [NSString stringWithFormat:@"value: %f",[self.Slider1 value]];
+    NSLog(str1);
+    [self.valueOfSlider setText:str1];
+}
+
+
+
 
 @end

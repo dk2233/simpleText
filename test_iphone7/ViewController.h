@@ -12,12 +12,19 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *text_queue;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UISlider *Slider1;
 
 @property (weak, nonatomic) IBOutlet UITextField *text_timer;
 
 @property (weak, nonatomic) IBOutlet UITextField *text;
+
+@property (weak, nonatomic) IBOutlet UITextField *valueOfSlider;
+
 @property dispatch_queue_t  MyQueue;
 @property int8_t var;
+
+
+
 @end
 
 /* this is simple example of
