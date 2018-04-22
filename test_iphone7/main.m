@@ -12,6 +12,13 @@
 int main(int argc, char * argv[]) {
         
     @autoreleasepool {
+        NSLog(@" starting ... ");
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 5*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            NSLog(@"\n\n MAIN : after 5 \n\n");
+            
+        });
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
     
